@@ -1,0 +1,30 @@
+{
+    "theme_color": "#020202",
+    "background_color": "#5e5954",
+    "display": "fullscreen",
+    "scope": "/parcial/",
+    "start_url": "/parcial/index.html",
+    "name": "LasPelis",
+    "short_name": "PWA",
+    "icons": [{
+            "src": "/parcial/img/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/parcial/img/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/parcial/img/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/parcial/img/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

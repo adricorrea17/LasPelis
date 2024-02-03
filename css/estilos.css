@@ -1,0 +1,591 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212529
+}
+
+.pelis {
+    background-color: #101111 !important;
+}
+
+.pelis img {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+}
+
+.green {
+    color: lightgreen;
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color: red;
+}
+
+section {
+    min-height: calc(100vh - 18.5rem);
+}
+
+#aplicacion-estado {
+    font-weight: bold;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.volver {
+    background-color: transparent;
+    border: solid gray 1px;
+    font-size: 1.5rem;
+    padding-inline: 1rem;
+}
+
+.volver:hover {
+    color: #818181;
+    border: solid rgb(0, 0, 0) 2px;
+    background-color: black;
+}
+
+#instalar,
+#Compartir {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.bg-gray {
+    background-color: #3f3e3e;
+}
+
+#instalar:hover,
+#Compartir:hover {
+    color: #5f6264;
+}
+
+.back {
+    background-color: white;
+    width: 30rem;
+    height: 15rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bg-dark {
+    background-color: #101111 !important;
+}
+
+@media screen and (max-width:429px) {
+    #btnmodal {
+        margin: 0 auto;
+    }
+    .pelis {
+        margin: 1rem;
+        box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+        background-color: #212529
+    }
+    .votomodal {
+        text-align: center !important
+    }
+    .titulomodal {
+        text-align: center !important
+    }
+    .overmodal {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+        flex: 0 0 auto;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center !important
+    }
+    .pelisarg {
+        margin-left: 2rem;
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    .modalimg {
+        width: 15rem;
+    }
+    .logo {
+        width: 4rem;
+        margin-left: 10px
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        background-color: #1e2022;
+    }
+    nav {
+        background-color: #1e2022;
+    }
+    .radio {
+        border-radius: 10px;
+    }
+    .imagen {
+        width: 100%;
+    }
+    #myNav {
+        flex-direction: column !important;
+    }
+    header {
+        justify-content: flex-end;
+        background-color: #1a1919;
+    }
+    .buscar {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        font-family: inherit;
+        width: 90%;
+    }
+    .buscar:focus {
+        outline: 0;
+    }
+    section,
+    #contenedor,
+    #lista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pelis-info {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem 1rem;
+        letter-spacing: 0.5px;
+    }
+    .pelis-info h3 {
+        margin-top: 0;
+    }
+    .pelis-info span {
+        padding: 0.25rem 0.5rem;
+        border-radius: 3px;
+        font-weight: bold;
+    }
+    .overview {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        padding: 1rem;
+        max-height: 100%;
+        transform: translateY(101%);
+        transition: transform 0.3s ease-in;
+    }
+    .pelis:hover .overview {
+        transform: translateY(0)
+    }
+    .boton {
+        width: 100%;
+    }
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-y: visible;
+        transition: 0.5s;
+    }
+    .overlay-content {
+        width: 20rem;
+        text-align: center;
+        margin: 0 auto
+    }
+    .overlay-text {
+        width: 100%;
+        margin-top: 2vh;
+    }
+    #boton {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #5a4444;
+        display: block;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    #boton:hover,
+    #boton:focus {
+        color: #f1f1f1;
+    }
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    .white {
+        color: white;
+    }
+    .none {
+        display: none !important;
+    }
+    .block {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        display: block;
+    }
+    #milista {
+        color: white;
+        text-decoration: none;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+    #milista:hover {
+        color: #5f6264;
+    }
+}
+
+@media screen and (min-width:430px) and (max-width:1040px) {
+    #btnmodal {
+        margin: 0 auto;
+    }
+    .votomodal {
+        text-align: center !important
+    }
+    .titulomodal {
+        text-align: center !important
+    }
+    .overmodal {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+        flex: 0 0 auto;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center !important
+    }
+    .pelisarg {
+        margin-left: 2rem;
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    .modalimg {
+        width: 15rem;
+    }
+    .logo {
+        width: 4rem;
+        margin-left: 10px
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        background-color: #1e2022;
+    }
+    nav {
+        background-color: #1e2022;
+    }
+    .radio {
+        border-radius: 10px;
+    }
+    .imagen {
+        width: 100%;
+    }
+    #myNav {
+        flex-direction: column !important;
+    }
+    header {
+        justify-content: flex-end;
+        background-color: #1a1919;
+    }
+    .buscar {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        font-family: inherit;
+        width: 90%;
+    }
+    .buscar:focus {
+        outline: 0;
+    }
+    section,
+    #contenedor,
+    #lista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pelis {
+        width: 20rem;
+        margin: 1rem;
+        box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+        background-color: #212529
+    }
+    .pelis-info {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem 1rem;
+        letter-spacing: 0.5px;
+    }
+    .pelis-info h3 {
+        margin-top: 0;
+    }
+    .pelis-info span {
+        padding: 0.25rem 0.5rem;
+        border-radius: 3px;
+        font-weight: bold;
+    }
+    .overview {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        padding: 1rem;
+        max-height: 100%;
+        transform: translateY(101%);
+        transition: transform 0.3s ease-in;
+    }
+    .pelis:hover .overview {
+        transform: translateY(0)
+    }
+    .boton {
+        width: 100%;
+    }
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-y: visible;
+        transition: 0.5s;
+    }
+    .overlay-content {
+        width: 20rem;
+        text-align: center;
+        margin: 0 auto
+    }
+    .overlay-text {
+        width: 100%;
+        margin-top: 2vh;
+    }
+    #boton {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #5a4444;
+        display: block;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    #boton:hover,
+    #boton:focus {
+        color: #f1f1f1;
+    }
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    .white {
+        color: white;
+    }
+    .none {
+        display: none !important;
+    }
+    .block {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        display: block;
+    }
+    #milista {
+        color: white;
+        text-decoration: none;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+    #milista:hover {
+        color: #5f6264;
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .pelisarg {
+        margin-left: 2rem;
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    .logo {
+        width: 4rem;
+        margin-left: 10px
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        ;
+    }
+    nav {
+        background-color: #1e2022;
+    }
+    .radio {
+        border-radius: 10px;
+    }
+    .imagen {
+        width: 100%;
+    }
+    header {
+        justify-content: flex-end;
+        background-color: #1a1919;
+    }
+    .buscar {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        font-family: inherit;
+        width: 30rem;
+    }
+    .buscar:focus {
+        outline: 0;
+    }
+    section,
+    #contenedor,
+    #lista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pelis {
+        width: 30rem;
+        margin: 1rem;
+        box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+        background-color: #212529
+    }
+    .pelis-info {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem 1rem;
+        letter-spacing: 0.5px;
+    }
+    .pelis-info h3 {
+        margin-top: 0;
+    }
+    .pelis-info span {
+        padding: 0.25rem 0.5rem;
+        border-radius: 3px;
+        font-weight: bold;
+    }
+    .overview {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        padding: 1rem;
+        max-height: 100%;
+        transform: translateY(101%);
+        transition: transform 0.3s ease-in;
+    }
+    .pelis:hover .overview {
+        transform: translateY(0)
+    }
+    .boton {
+        width: 100%;
+    }
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-y: visible;
+        transition: 0.5s;
+    }
+    .overlay-content {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        margin-left: 10rem;
+    }
+    .overlay-text {
+        position: relative;
+        width: 100%;
+        top: 10%;
+    }
+    #boton {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    #boton:hover,
+    #boton:focus {
+        color: #f1f1f1;
+    }
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    .white {
+        color: white;
+    }
+    .none {
+        display: none !important;
+    }
+    .block {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        display: block;
+    }
+    .top {
+        margin-top: 12vh;
+    }
+    #milista {
+        color: white;
+        text-decoration: none;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+    #milista:hover {
+        color: #5f6264;
+    }
+}
